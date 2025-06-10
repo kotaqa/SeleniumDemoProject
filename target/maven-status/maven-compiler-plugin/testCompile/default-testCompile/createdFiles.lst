@@ -1,0 +1,6 @@
+com\demo\commonClasses\FuncitonLibrary.class
+com\demo\commonClasses\Variables.class
+com\demo\listeners\MyListener.class
+com\demo\tests\LoginTest.class
+com\demo\pages\LoginPage.class
+com\demo\pages\SecureAreaPage.class
