@@ -30,6 +30,7 @@ public class LoginTest extends FuncitonLibrary {
 		loginPage = new LoginPage(driver);
 		secureAreaPage = new SecureAreaPage(driver);
 		Allure.addAttachment("My LogMessage", "Browser opened successfully ");
+		Allure.step("Browser is opened successfully");		
 	}
 
 	@Test
@@ -40,6 +41,7 @@ public class LoginTest extends FuncitonLibrary {
 		Assert.assertEquals(secureAreaPage.getHeaderText(), "Secure Area");
 		Assert.assertTrue(loginPage.getFlashMessage().contains("You logged into a secure area!"));
 		Allure.addAttachment("My LogMessage", "Application logged in successfully ");
+		Allure.step( "Application logged in successfully ");
 	}
 
 	@AfterClass
